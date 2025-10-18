@@ -117,8 +117,6 @@ I think I will go with the music playlist just based off of the fact I Immediate
 > we'll want a branch that you can later make a pull request from with all
 > your changes.
 
-<!-- TODO: make a new branch from main then delete this comment -->
-
 ## Assignment Tasks
 
 As stated previously, your goal with this assignment is to produce a Java
