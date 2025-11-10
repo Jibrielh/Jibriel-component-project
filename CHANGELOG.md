@@ -18,5 +18,7 @@ added.
 ### Updated
 
 10/23/25
+Designed kernel and enhanced interfaces for Musicplaylist component
 I have made the interface for the standard also the kernel which extends standard, and also musicplaylist which extends the kernel.
 3 methods currently for each. As of the 3 kernel methods should be enough to implement any secondary methods.
+Documentation for files written
