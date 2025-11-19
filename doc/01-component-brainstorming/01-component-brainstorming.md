@@ -271,7 +271,7 @@ completed the assignment.
 
 ### Changelog
 
-<!-- TODO: create CHANGELOG then delete this comment -->
+
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
@@ -296,6 +296,12 @@ the following form: YYYY.0M.0D.
 - Designed a Music playlist component
 - Designed a Basketball team component
 - Designed a Bank accout component
+
+
+#Updated
+Created the intial repersentation of the music component
+Created the kernel methods Add remove Size Clear
+
 ```
 
 Here 2025.10.17` would be the date of your submission, such as 2024.04.21.
@@ -317,8 +323,6 @@ created for you automatically every time you save, so just double check that
 all your work is there before submitting. For future assignments, you will
 just be submitting a link to a pull request. This will be the only time
 you have to submit any PDFs.
-
-<!-- TODO: upload a PDF of this document and the CHANGELOG to Carmen then delete this comment -->
 
 ### Peer Review
 
