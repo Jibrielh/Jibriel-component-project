@@ -81,6 +81,10 @@ public abstract class MusicPlaylistSecondary implements MusicPlaylist {
         }
 
     }
+    @Override
+    public int hashCode(){
+        
+    }
 
     public static void main(String[] args) {
 
