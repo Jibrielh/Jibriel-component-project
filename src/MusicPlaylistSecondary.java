@@ -7,7 +7,7 @@
 public abstract class MusicPlaylistSecondary implements MusicPlaylist {
 
     @Override
-    public Boolean contains(String s) {
+    public final Boolean contains(String s) {
         boolean flag = false;
         int l = this.size();
         String[] temp = new String[l];
@@ -28,12 +28,12 @@ public abstract class MusicPlaylistSecondary implements MusicPlaylist {
     }
 
     @Override
-    public void shuffle() {
+    public final void shuffle() {
         int s = this.size();
         if (s <= 1) {
             return;
         }
-        String temp[] = new String[s];
+        String[] temp = new String[s];
         for (int i = 0; i < s; i++) {
             temp[i] = this.removeAny();
         }
@@ -51,7 +51,7 @@ public abstract class MusicPlaylistSecondary implements MusicPlaylist {
     }
 
     @Override
-    public void removeDup() {
+    public final void removeDup() {
 
         int l = this.size();
 
@@ -79,14 +79,6 @@ public abstract class MusicPlaylistSecondary implements MusicPlaylist {
 
             }
         }
-
-    }
-    @Override
-    public int hashCode(){
-        
     }
 
-    public static void main(String[] args) {
-
-    }
 }

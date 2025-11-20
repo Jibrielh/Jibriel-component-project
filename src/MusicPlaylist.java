@@ -33,4 +33,10 @@ public interface MusicPlaylist extends MusicPlaylistKernel {
      */
     void removeDup();
 
+    /**
+     * @updates this
+     * @ensures no element/song is in the playlist more than once
+     */
+    String removeAny();
+
 }
