@@ -35,8 +35,9 @@ public interface MusicPlaylist extends MusicPlaylistKernel {
 
     /**
      * @updates this
-     * @ensures no element/song is in the playlist more than once
-     */
+     * @ensures this = @this  - m
+     * @return an arbitrary song
+     **/
     String removeAny();
 
 }
