@@ -47,6 +47,13 @@ public class MusicPlaylistOnArrayList extends MusicPlaylistSecondary {
     }
 
     @Override
+    public int size() {
+
+        return this.playlist.size();
+
+    }
+
+    @Override
     public MusicPlaylistOnArrayList newInstance() {
         return new MusicPlaylistOnArrayList();
     }
@@ -57,10 +64,11 @@ public class MusicPlaylistOnArrayList extends MusicPlaylistSecondary {
     }
 
     @Override
-    public void transferFrom(MusicPlaylistOnArrayList playlsit2) {
-        assert playlsit2 != null : " The transfering playlist cannot be null";
-        this.playlist = playlsit2.playlist;
-        playlsit2.playlist.clear();
+    public void transferFrom(MusicPlaylist t) {
+        MusicPlaylistOnArrayList playlist2 = (MusicPlaylistOnArrayList) t;
+
+        this.playlist = playlist2.playlist;
+        playlist2.playlist.clear();
 
     }
 
