@@ -1,13 +1,12 @@
 import java.util.ArrayList;
 
 /**
- * Implenting {@code Musicplaylist}
+ * {@code Musicplaylist} repersented using an
+ * {@code ArrayList<String>  with implementations
+ * for all kernel/standards file}
  *
- * Convention Playlist != null // playlist exist Every song in playlist != null
- *
- *
- *
- *
+ * @correspondence this = playlist
+ * @convention Playlist is not null and playlist.get(i) != null also
  *
  */
 
