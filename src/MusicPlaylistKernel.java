@@ -15,7 +15,7 @@ public interface MusicPlaylistKernel extends Standard<MusicPlaylistKernel> {
      * @param n
      *            is the song be added
      * @updates this
-     * 
+     *
      * @ensures n * #this
      */
     void songAdd(String n);
@@ -40,5 +40,13 @@ public interface MusicPlaylistKernel extends Standard<MusicPlaylistKernel> {
      * @returns the amount of songs inside the playlist
      */
     int size();
+
+    /**
+     * @requires this != null
+     * @updates this
+     * @ensures this = #this-n && removeAny = n;
+     *
+     */
+    String removeAny();
 
 }
