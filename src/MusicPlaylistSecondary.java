@@ -79,15 +79,5 @@ public abstract class MusicPlaylistSecondary implements MusicPlaylist {
 
             }
         }
-<<<<<<< Updated upstream
     }
-
-=======
-
-    }
-
-    public static void main(String[] args) {
-
-    }
->>>>>>> Stashed changes
 }
