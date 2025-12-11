@@ -6,7 +6,7 @@
      * @Author Jibriel Hassan
      */
 
-public interface MusicPlaylistKernel extends Standard<MusicPlaylistKernel> {
+public interface MusicPlaylistKernel extends Standard<MusicPlaylist> {
 
     /**
      *
@@ -45,7 +45,7 @@ public interface MusicPlaylistKernel extends Standard<MusicPlaylistKernel> {
      * @requires this != null
      * @updates this
      * @ensures this = #this-n && removeAny = n;
-     *
+     * @returns an arbritrary song
      */
     String removeAny();
 

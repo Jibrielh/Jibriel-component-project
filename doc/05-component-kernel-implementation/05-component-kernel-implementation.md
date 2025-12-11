@@ -1,8 +1,8 @@
 # Portfolio Part 5: Kernel Implementation
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) and delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) and delete this comment -->
-- **Due Date**: <!-- TODO: fill out with due date and time (e.g., 10/17 @ 3:10 PM EST) and delete this comment -->
+- **Jibriel Hassan**
+- **hassan.550**
+- **11/20/25**
 
 ## Assignment Overview
 
@@ -120,7 +120,8 @@ Below is further rationale/explanation for the rubric items above:
 > discuss how that representation will be restricted (i.e., by convention)
 > and interpreted (i.e., by correspondence).
 
-<!-- TODO: select a representation and explain why -->
+It came down to two options and they were eithier a single linked list or a Arraylsit. The array list makes the most sense because it essnetially has all the functions of a playlis. Also from a performance standpoint which is kind of useless at this scale but the arraylist is faster because we can access/grab each index o(1).
+
 
 > To start making your kernel implementation, make a branch off of main in your
 > new repo called something like `kernel-implementation`. There are many ways to

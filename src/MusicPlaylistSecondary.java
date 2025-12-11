@@ -66,10 +66,9 @@ public abstract class MusicPlaylistSecondary implements MusicPlaylist {
 
         for (int i = 0; i < l; i++) {
             boolean check = false;
-            for (int j = i + 1; j < l; j++) {
+            for (int j = 0; j < i; j++) {
                 if (temp[i].equals(temp[j])) {
                     check = true;
-                    break;
 
                 }
             }
