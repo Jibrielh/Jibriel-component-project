@@ -10,7 +10,7 @@ public interface MusicPlaylistKernel extends Standard<MusicPlaylist> {
 
     /**
      *
-     *
+     * Adds a song to this playlist.
      *
      * @param n
      *            is the song be added
@@ -22,7 +22,7 @@ public interface MusicPlaylistKernel extends Standard<MusicPlaylist> {
 
     /**
      *
-     *
+     * Removes a specified song from this playlist.
      *
      * @param n
      *            is the song being removed
@@ -34,7 +34,7 @@ public interface MusicPlaylistKernel extends Standard<MusicPlaylist> {
     void songRemove(String n);
 
     /**
-     *
+     * Returns the number of songs in this playlist.
      *
      * @ensures |this| = size
      * @returns the amount of songs inside the playlist
@@ -42,6 +42,8 @@ public interface MusicPlaylistKernel extends Standard<MusicPlaylist> {
     int size();
 
     /**
+     * Removes and returns an arbitrary song from this playlist.
+     *
      * @requires this != null
      * @updates this
      * @ensures this = #this-n && removeAny = n;

@@ -45,4 +45,12 @@ Chose ArrayList for the data structure and Added the constructor.
 All kernel methods were implemented( SongAdd,SongRemove, RemoveAny, Size)
 Standard methods were added in
 
+## Updated
+
+[12/10/25]
+Fixed transferFrom method to correctly move playlist references while keeping source playlist empty.
+Updated removeAny() to select a random element and not just middle
+
+made the JUnit test class for MusicPlaylistOnArrayList to properly extend the abstract .
+ Finsihed up componenet and everything is working and all test cases passed
 -

@@ -79,4 +79,105 @@ public abstract class MusicPlaylistSecondary implements MusicPlaylist {
             }
         }
     }
+
+    @Override
+    public boolean equals(Object o) {
+
+        boolean flag = true;
+        int n = this.size();
+
+        if (this != o) {
+
+            if (o.getClass() != this.getClass()) {
+                flag = false;
+            } else {
+
+                MusicPlaylist other = (MusicPlaylist) o;
+
+                if (this.size() != other.size()) {
+                    flag = false;
+
+                } else {
+
+                    String[] songA = new String[n];
+                    String[] songB = new String[n];
+
+                    for (int i = 0; i < n; i++) {
+                        songA[i] = this.removeAny();
+                        songB[i] = other.removeAny();
+                    }
+
+                    for (int i = 0; i < n; i++) {
+                        this.songAdd(songA[i]);
+                        other.songAdd(songB[i]);
+                    }
+
+                    for (int i = 0; i < n; i++) {
+
+                        boolean found = false;
+                        for (int j = 0; j < n; j++) {
+                            if (songA[i].equals(songB[j])) {
+                                found = true;
+                                break;
+                            }
+                        }
+
+                        if (!found) {
+                            flag = false;
+                        }
+                    }
+                }
+            }
+        }
+
+        return flag;
+    }
+
+    @Override
+    public String toString() {
+        String res = "";
+        int n = this.size();
+        String[] temp = new String[n];
+        StringBuilder s = new StringBuilder();
+
+        for (int i = 0; i < n; i++) {
+            temp[i] = this.removeAny();
+        }
+
+        for (int i = 0; i < n; i++) {
+            s.append(temp[i]);
+            if (i < n - 1) {
+                s.append(" , ");
+            }
+        }
+
+        for (int i = 0; i < n; i++) {
+            this.songAdd(temp[i]);
+        }
+
+        res = s.toString();
+        return res;
+    }
+
+    @Override
+    public int hashCode() {
+
+        int n = this.size();
+        String[] temp = new String[n];
+
+        for (int i = 0; i < n; i++) {
+            temp[i] = this.removeAny();
+        }
+
+        int total = 0;
+        for (int i = 0; i < n; i++) {
+            total += temp[i].hashCode();
+        }
+
+        for (int i = 0; i < n; i++) {
+            this.songAdd(temp[i]);
+        }
+
+        return total;
+    }
 }

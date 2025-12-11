@@ -38,11 +38,8 @@ public class MusicPlaylistOnArrayList extends MusicPlaylistSecondary {
 
     @Override
     public String removeAny() {
-
-        int mid = this.playlist.size() / 2;
-
-        return this.playlist.remove(mid);
-
+        int i = (int) (Math.random() * this.playlist.size());
+        return this.playlist.remove(i);
     }
 
     @Override
@@ -64,10 +61,11 @@ public class MusicPlaylistOnArrayList extends MusicPlaylistSecondary {
 
     @Override
     public void transferFrom(MusicPlaylist t) {
-        MusicPlaylistOnArrayList playlist2 = (MusicPlaylistOnArrayList) t;
+        MusicPlaylistOnArrayList src = (MusicPlaylistOnArrayList) t;
 
-        this.playlist = playlist2.playlist;
-        playlist2.playlist.clear();
+        this.playlist = src.playlist;
+
+        src.playlist = new ArrayList<>();
 
     }
 

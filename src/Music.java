@@ -1,75 +1,60 @@
-import java.util.List;
-
 public class Music {
 
-    private List<String> playlist;
+    private MusicPlaylistOnArrayList playlist;
 
-    /*
-     * Working on possibe methods they are subject to change if this does not
-     * work out well
-     *
-     * Add,remove,size,clear shuffle, contains,remove a dup
-     *
+    /**
+     * This is playing around for use case part
      */
 
-    public void playlistAdd(String n) {
-        this.playlist.add(n);
-
+    public Music() {
+        this.playlist = new MusicPlaylistOnArrayList();
     }
 
-    public void playlistRemove(String n) {
-        this.playlist.remove(n);
-
+    public void addSong(String song) {
+        this.playlist.songAdd(song);
     }
 
-    public int playlistSize() {
+    public void removeSong(String song) {
+        this.playlist.songRemove(song);
+    }
+
+    public int sizer() {
         return this.playlist.size();
-
     }
 
-    public void empty() {
+    public boolean containsSong(String song) {
+        return this.playlist.contains(song);
+    }
+
+    public void removeDuplicates() {
+        this.playlist.removeDup();
+    }
+
+    public void shufflePlaylist() {
+        this.playlist.shuffle();
+    }
+
+    public void clearPlaylist() {
         this.playlist.clear();
-
-    }
-
-    public boolean isIN(String n) {
-        boolean check = false;
-        if (this.playlist.contains(n)) {
-            check = true;
-        }
-        return check;
-    }
-
-    public void RemoveDup() {
-        int i = 0;
-        String n;
-        while (i < this.playlistSize()) {
-            n = this.playlist.get(i);
-            int dup = i + 1;
-            while (dup < this.playlistSize()) {
-                if (this.playlist.get(i) == this.playlist.get(dup)) {
-                    this.playlist.remove(dup);
-                } else {
-                    dup++;
-
-                }
-            }
-
-        }
-
     }
 
     public static void main(String[] args) {
-        Music jSongs = new Music();
-        jSongs.playlistAdd("Heating up");
-        jSongs.playlistRemove("Heating up");
-        jSongs.playlistAdd("Commercial");
-        int jSize = jSongs.playlistSize();
-        Boolean isThere = jSongs.isIN("Heating up");
-        jSongs.playlistAdd("commercial");
-        jSongs.RemoveDup();
-        jSongs.empty();
+        Music songs = new Music();
 
+        songs.addSong("Heat");
+        songs.addSong("Heat");
+        songs.addSong("Commercial");
+
+        System.out.println("playlist sizee. " + songs.sizer());
+        System.out.println("Contains 'Heat" + songs.containsSong("Heat"));
+
+        songs.removeDuplicates();
+        System.out.println("Playlist size after " + songs.sizer());
+
+        songs.removeSong("Commercial");
+        System.out.println("Playlist size after we took out" + songs.sizer());
+
+        songs.clearPlaylist();
+        System.out.println("Playlist size after clearing: " + songs.sizer());
     }
-
 }
