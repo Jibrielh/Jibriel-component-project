@@ -307,18 +307,21 @@ Take some time to fill them out honestly.
 > complete the portfolio project, how much better (or worse) do you think you
 > understand software development and why?
 
-<!-- TODO: discuss -->
+Creating and just playing with my own has really helped me in the sense of we were not given a skeleton so just messing around and being hands on helps
 
 > Also, did the portfolio project surface any gaps in your own knowledge of
 > software development. If so, what are those gaps and how did you address them?
 
-<!-- TODO: discuss -->
+not to much of a gap because my componenet follows a real kind of osu style we learn in class 
+
+
 
 > Finally, as a part of completing the portfolio project, to what extent has
 > your perspective of software development changed, if at all? In other words,
 > is software development something you still enjoy? If not, why not?
 
-<!-- TODO: discuss -->
+Not really related but i was thinking while desigingin this playlist and it made think about how i want to play
+around with spring boot after this because i believe i seen something about its really good for webservices and rest API's
 
 > One of the challenges of completing the portfolio project is picking up a lot
 > of skills on your own. Some of these skills are, of course, software skills.
@@ -326,25 +329,30 @@ Take some time to fill them out honestly.
 > this process. Therefore, the first question is what skills did you pick up
 > through this process?
 
-<!-- TODO: discuss -->
+Honestly not to much I could of done more complex if My other werent keeping me so busy
 
 > The follow-up question is: could you rephrase these skills you picked up
 > as bullet points that you could put on a resume? Try it below.
 
-<!-- TODO: discuss -->
+Developed and implemented Java classes using oop, including abstract classes, interfaces, and concrete implementations.
+Designed and executed  JUnit test  to validate functionality of core and secondary methods, ensuring robustness and reliability.
+
+
 
 > Next, how has working on this project affected your career trajectory?
 > In other words, do you now hate the topic you picked? Or, are you even more
 > interested in it? Both outcomes are valuable to your personal development.
 
-<!-- TODO: discuss -->
+Honestly made me more curious i want to play around with some more stuff this winter break and also want to get into python becuase of how 
+cursed java is.
 
 > Finally, consider the skills you've picked up and your current career
 > trajectory. What are some things you could do to continue on your
 > career trajectory? Also, who are some mentors you could contact to help
 > you stay on your path?
 
-<!-- TODO: discuss -->
+which might be funny to say the most help might be in grifski discord for software because of the people in there. People who you dont know
+will answer usually to help with anything. Im sure if i am wokring on a project of my own i cant get some help from the discord.
 
 ### Changelog
 
